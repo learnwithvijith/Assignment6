@@ -1,16 +1,17 @@
-
+ 
+let n = 20
 let i = 1
-let n = 25
+for(i;i<=n;i++){
 
-for (i = 1; i <= n; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
+
+    if(i%3===0 && i%5===0){
         console.log('FizzBuzz')
-    } else if (i % 3 === 0) {
+    }else if(i%3===0){
         console.log('Fizz')
-    } else if (i % 5 === 0) {
+    }else if(i%5===0){
         console.log('Buzz')
     }
-    else {
+    else{
         console.log(i)
     }
 }
