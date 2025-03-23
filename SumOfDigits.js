@@ -1,7 +1,13 @@
-let number= 10;
-let sum=0
 
-for(let i=1; i <=number; i++){
-    sum+=i
+
+
+function sumOfDigits(number) {
+    const digits = number.toString().split('');
+
+    const sum = digits.reduce((acc, digit) => acc + parseInt(digit), 0);
+
+    return sum;
 }
-console.log(sum); 
+
+const number = 12345;
+console.log("Sum of digits:", sumOfDigits(number)); 

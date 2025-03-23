@@ -1,12 +1,14 @@
-let n = 10; 
-let a = 0, b = 1, next;
 
-console.log(a);
-console.log(b);
+let n=10
 
-for (let i = 2; i < n; i++) {
-  next = a + b;
-  console.log(next);
-  a = b;
-  b = next;
+let a=0
+let b =1
+let next
+
+console.log(a)
+for (let i = 1; i<n; i++){
+    console.log(b)
+    next = a+b
+    a=b
+    b=next
 }
