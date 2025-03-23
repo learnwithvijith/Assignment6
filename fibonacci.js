@@ -1,14 +1,16 @@
-
-let n=10
-
-let a=0
-let b =1
-let next
-
-console.log(a)
-for (let i = 1; i<n; i++){
-    console.log(b)
-    next = a+b
-    a=b
-    b=next
+function fibonacciSeries(n){
+    let first = 0;
+    let second = 1;
+    console.log(first);
+    console.log(second);
+    for ( let i = 0; i < n; i++ ) {        
+        let next = first + second;
+        first = second;
+        second = next;
+        console.log(next);
+        
+    }
 }
+
+let n = 10;
+fibonacciSeries(n);

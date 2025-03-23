@@ -1,8 +1,8 @@
-
-let n = 3
-let factorial = 1
-let i = 1
-for (i; i <= n; i++) {
-    factorial = factorial * i
+function factorial(n) {
+    let fact = 1;
+    for (let i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
 }
-console.log(factorial)
+factorial(5);
