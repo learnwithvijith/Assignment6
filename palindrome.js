@@ -1,10 +1,18 @@
-// implement a program to check whether a string is palindrome or not 
-let str = "malayalam";
-let isPalindrome = true;
-for (let i = 0; i < str.length / 2; i++) {
-    if (str[i] !== str[str.length - 1 - i]) {
-        isPalindrome = false;
-        break;
-    }
+
+
+// implement a program to check whether a string is palindrome or not
+
+let string = "malayalam"
+
+let string1 = ""
+
+for (let i = string.length-1 ; i>=0; i--){
+      string1 += string[i]
 }
-console.log(str, isPalindrome ? "is Palindrome" : "is not Palindrome");
+// console.log(string1)
+
+if (string === string1){
+    console.log( "your word ",string," is palindrome")
+}else{
+    console.log("it is not a palindrome")
+}
