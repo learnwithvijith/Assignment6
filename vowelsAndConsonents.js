@@ -1,21 +1,23 @@
 
-//.implement a program to find the number of vowels and consonents in a string
+let str = 'hello'
+
+let vowels = 0
+let consonants =0
+let lowerStr = str
+
+let vowelList = 'aeiou'
+let length = lowerStr.length
 
 
-let string = "happy"; 
-let vowels = "aeiouAEIOU";
-let vowelCount = 0;
-let consonantCount = 0;
+for (let i = 0; i<length; i++){
 
-for (let i = 0; i < string.length; i++) {
-    let char = string[i];
+    if(vowelList.includes(char)){
+        vowels++
+    }else if(char>='a' && char <='z'){
+        consonants++
+    }
 
-    if (vowels.includes(char)) {
-        vowelCount++;
-    } else if (char >='a' && char <='z' || char >='A' && char <= 'Z') {
-        consonantCount++;
-    } 
 }
-console.log("your word",string)
-console.log("Vowels:", vowelCount);
-console.log("Consonants:", consonantCount);
+
+console.log('Vowels',vowels)
+console.log('Consonants',consonants)
