@@ -1,15 +1,9 @@
-// count the number of digits
-
-
-function countDigits(number) {
-    let count = 0;
-    while (number !== 0) {
-        number = Math.floor(number / 10);
-        count++;
-    }
-    return count;
+function counting(num) {
+    return String(num).split('').reduce(
+        (count, digit) => count + 1, 0);
 }
 
-// Example
-const number = 98765;
-console.log("Number of digits:", countDigits(number));
+let num1 = 98765;
+let result1 = counting(num1);
+
+console.log("Number of digits in " + num1 + ": " + result1);
