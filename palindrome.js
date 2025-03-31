@@ -1,12 +1,12 @@
-const wordString = "MALAYALAM"
-
 function isPalindrome(str) {
-    str = str.toLowerCase()
-    let reversedStr = ''
-    for (let i = str.length - 1; i >= 0; i--) {
-        reversedStr += str[i]
-    }
-    return str === reversedStr
+
+    
+    let reversedStr = str.split("").reverse().join("");
+
+
+    return str === reversedStr;
 }
 
-console.log(`${wordString} is a palindrome: ${isPalindrome(wordString)}`)
+
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("hello")); 
