@@ -1,6 +1,8 @@
-function reverseString(str) {
-    return str.split("").reverse().join("");
-}
+//  auther mohammed
+//  date 22/3/25
 
-let str = prompt("Enter a string: ");
-console.log(`Reversed string: ${reverseString(str)}`);
+// .Implement a program to reverse a string
+
+function reverseString(str){
+    return str.split('').reverse().join('')
+}console,log(reverseString("mohammed"))
